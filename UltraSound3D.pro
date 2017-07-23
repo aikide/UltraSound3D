@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    window3d.cpp \
+    slicewindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    window3d.h \
+    slicewindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    window3d.ui \
+    slicewindow.ui
