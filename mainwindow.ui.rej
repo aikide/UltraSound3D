@@ -1,0 +1,37 @@
+diff a/mainwindow.ui b/mainwindow.ui	(rejected hunks)
+@@ -60,7 +60,7 @@
+      </widget>
+     </item>
+     <item row="1" column="2">
+-     <widget class="QWidget" name="widget_2" native="true">
++     <widget class="QWidget" name="widgetCoronal" native="true">
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+ border-radius: 10px;</string>
+@@ -68,7 +68,7 @@
+      </widget>
+     </item>
+     <item row="5" column="0">
+-     <widget class="QWidget" name="widget_3" native="true">
++     <widget class="QWidget" name="widgetSagittal" native="true">
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+ border-radius: 10px;</string>
+@@ -76,7 +76,7 @@
+      </widget>
+     </item>
+     <item row="1" column="0">
+-     <widget class="QWidget" name="widget" native="true">
++     <widget class="QWidget" name="widget3D" native="true">
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+ border-radius: 10px;</string>
+@@ -110,7 +110,7 @@
+      </widget>
+     </item>
+     <item row="5" column="2">
+-     <widget class="QWidget" name="widget_4" native="true">
++     <widget class="QWidget" name="widgetAxial" native="true">
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+ border-radius: 10px;</string>

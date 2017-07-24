@@ -60,7 +60,7 @@
      </widget>
     </item>
     <item row="1" column="2">
-     <widget class="QWidget" name="widgetCoronal" native="true">
+     <widget class="QWidget" name="widget_2" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -68,7 +68,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QWidget" name="widgetSagittal" native="true">
+     <widget class="QWidget" name="widget_3" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -76,7 +76,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QWidget" name="widget3D" native="true">
+     <widget class="QWidget" name="widget" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -110,7 +110,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="5" column="2">
-     <widget class="QWidget" name="widgetAxial" native="true">
+     <widget class="QWidget" name="widget_4" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -175,9 +175,7 @@ border-radius: 3px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 1px solid blue;
-background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+         <string notr="true">border: 1px solid blue</string>
         </property>
        </widget>
       </item>
@@ -256,9 +254,7 @@ border-radius: 3px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 1px solid blue;
-background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+         <string notr="true">border: 1px solid blue</string>
         </property>
        </widget>
       </item>
@@ -430,9 +426,7 @@ border-radius: 3px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 1px solid blue;
-background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+         <string notr="true">border: 1px solid blue</string>
         </property>
        </widget>
       </item>
