@@ -175,7 +175,9 @@ border-radius: 3px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 1px solid blue</string>
+         <string notr="true">border: 1px solid blue;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
         </property>
        </widget>
       </item>
@@ -254,7 +256,9 @@ border-radius: 3px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 1px solid blue</string>
+         <string notr="true">border: 1px solid blue;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
         </property>
        </widget>
       </item>
@@ -426,7 +430,9 @@ border-radius: 3px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 1px solid blue</string>
+         <string notr="true">border: 1px solid blue;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
         </property>
        </widget>
       </item>
