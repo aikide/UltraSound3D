@@ -18,7 +18,7 @@
     <number>15</number>
    </property>
    <item row="2" column="0">
-    <widget class="QSlider" name="horizontalSlider">
+    <widget class="QSlider" name="horizontalSliderSlice">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
        <horstretch>0</horstretch>
@@ -58,7 +58,7 @@ border-radius: 3px;
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="lineEditSlice">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -79,7 +79,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
     </widget>
    </item>
    <item row="0" column="0" rowspan="2">
-    <widget class="QWidget" name="widget" native="true">
+    <widget class="QWidget" name="widgetSlice" native="true">
      <property name="styleSheet">
       <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -87,7 +87,7 @@ border-radius: 10px;</string>
     </widget>
    </item>
    <item row="0" column="1" rowspan="2">
-    <layout class="QVBoxLayout" name="verticalLayout_3">
+    <layout class="QVBoxLayout" name="verticalLayoutRight">
      <property name="spacing">
       <number>12</number>
      </property>
@@ -95,7 +95,7 @@ border-radius: 10px;</string>
       <enum>QLayout::SetMinimumSize</enum>
      </property>
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="labelCoordinates">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -115,12 +115,12 @@ border-radius: 10px;</string>
       </widget>
      </item>
      <item>
-      <layout class="QGridLayout" name="gridLayout_2">
+      <layout class="QGridLayout" name="gridLayoutCoordinates">
        <property name="sizeConstraint">
         <enum>QLayout::SetMinimumSize</enum>
        </property>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_3">
+        <widget class="QLineEdit" name="lineEditY">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -150,7 +150,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="1" column="0" alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="labelY">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -175,7 +175,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="0" column="0" alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="labelX">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -201,7 +201,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="0" column="2" alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="labelA">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -220,7 +220,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="2" column="2" alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_12">
+        <widget class="QLabel" name="labelG">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -239,7 +239,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="lineEditX">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -269,7 +269,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="1" column="2" alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="labelB">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -288,7 +288,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="2" column="0" alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_10">
+        <widget class="QLabel" name="labelZ">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -312,7 +312,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_4">
+        <widget class="QLineEdit" name="lineEditZ">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -342,7 +342,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="2" column="3">
-        <widget class="QLineEdit" name="lineEdit_7">
+        <widget class="QLineEdit" name="lineEditG">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -372,7 +372,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="0" column="3">
-        <widget class="QLineEdit" name="lineEdit_5">
+        <widget class="QLineEdit" name="lineEditA">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -405,7 +405,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item row="1" column="3">
-        <widget class="QLineEdit" name="lineEdit_6">
+        <widget class="QLineEdit" name="lineEditB">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -437,7 +437,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
       </layout>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="pushButtonBorders">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -453,7 +453,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_2">
+      <widget class="QCheckBox" name="checkBoxSpots">
        <property name="font">
         <font>
          <pointsize>10</pointsize>
@@ -465,7 +465,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox">
+      <widget class="QCheckBox" name="checkBoxBorders">
        <property name="font">
         <font>
          <pointsize>10</pointsize>
@@ -491,7 +491,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         <number>0</number>
        </property>
        <item alignment="Qt::AlignLeft|Qt::AlignBottom">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="pushButtonIncrease">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -510,7 +510,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         </widget>
        </item>
        <item alignment="Qt::AlignLeft|Qt::AlignBottom">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="pushButtonDecrease">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>

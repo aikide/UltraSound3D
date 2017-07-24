@@ -43,7 +43,7 @@
      <enum>QLayout::SetNoConstraint</enum>
     </property>
     <item row="4" column="2">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="labelAxial">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -60,7 +60,7 @@
      </widget>
     </item>
     <item row="1" column="2">
-     <widget class="QWidget" name="widget_2" native="true">
+     <widget class="QWidget" name="widgetCoronal" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -68,7 +68,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QWidget" name="widget_3" native="true">
+     <widget class="QWidget" name="widgetSagittal" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -76,7 +76,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QWidget" name="widget" native="true">
+     <widget class="QWidget" name="widget3D" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -84,7 +84,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="0" column="0">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="label3D">
       <property name="maximumSize">
        <size>
         <width>16777215</width>
@@ -110,7 +110,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="5" column="2">
-     <widget class="QWidget" name="widget_4" native="true">
+     <widget class="QWidget" name="widgetAxial" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -118,9 +118,9 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="6" column="2">
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <layout class="QHBoxLayout" name="horizontalLayoutAxial">
       <item>
-       <widget class="QSlider" name="horizontalSlider_3">
+       <widget class="QSlider" name="horizontalSliderAxial">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
           <horstretch>0</horstretch>
@@ -160,7 +160,7 @@ border-radius: 3px;
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_3">
+       <widget class="QLineEdit" name="lineEditAxial">
         <property name="maximumSize">
          <size>
           <width>30</width>
@@ -184,12 +184,12 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </layout>
     </item>
     <item row="2" column="2">
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayoutCoronal">
       <property name="sizeConstraint">
        <enum>QLayout::SetDefaultConstraint</enum>
       </property>
       <item>
-       <widget class="QSlider" name="horizontalSlider">
+       <widget class="QSlider" name="horizontalSliderCoronal">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -235,7 +235,7 @@ border-radius: 3px;
        </widget>
       </item>
       <item alignment="Qt::AlignRight">
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="lineEditCoronal">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -265,7 +265,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </layout>
     </item>
     <item row="0" column="2">
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="labelCoronal">
       <property name="maximumSize">
        <size>
         <width>16777215</width>
@@ -288,7 +288,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </widget>
     </item>
     <item row="2" column="0">
-     <spacer name="horizontalSpacer">
+     <spacer name="horizontalSpacer3D">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -301,7 +301,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </spacer>
     </item>
     <item row="7" column="0">
-     <spacer name="verticalSpacer_2">
+     <spacer name="verticalSpacerSagittal">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -317,7 +317,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </spacer>
     </item>
     <item row="6" column="1">
-     <spacer name="horizontalSpacer_2">
+     <spacer name="horizontalSpacerSadittalAxial">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -333,7 +333,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </spacer>
     </item>
     <item row="3" column="2">
-     <spacer name="verticalSpacer">
+     <spacer name="verticalSpacerCoronalAxial">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -349,7 +349,7 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </spacer>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="labelSagittal">
       <property name="maximumSize">
        <size>
         <width>16777215</width>
@@ -373,9 +373,9 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
      </widget>
     </item>
     <item row="6" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayoutSagittal">
       <item>
-       <widget class="QSlider" name="horizontalSlider_2">
+       <widget class="QSlider" name="horizontalSliderSagittal">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
           <horstretch>0</horstretch>
@@ -415,7 +415,7 @@ border-radius: 3px;
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="lineEditSagittal">
         <property name="maximumSize">
          <size>
           <width>30</width>
