@@ -15,6 +15,11 @@ public:
     explicit SliceWindow(QWidget *parent = 0);
     ~SliceWindow();
 
+private slots:
+    void on_horizontalSliderSlice_valueChanged(int value);
+
+    void on_lineEditSlice_textChanged(const QString &arg1);
+
 private:
     Ui::SliceWindow *ui;
 };

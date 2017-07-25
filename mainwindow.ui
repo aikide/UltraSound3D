@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1021</width>
+    <width>926</width>
     <height>693</height>
    </rect>
   </property>
@@ -170,14 +170,17 @@ border-radius: 3px;
         <property name="font">
          <font>
           <pointsize>12</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
          <string notr="true">border: 1px solid blue;
 background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                 stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+        </property>
+        <property name="text">
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -226,6 +229,9 @@ border-radius: 3px;
 
 </string>
         </property>
+        <property name="value">
+         <number>0</number>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -251,14 +257,17 @@ border-radius: 3px;
         <property name="font">
          <font>
           <pointsize>12</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
          <string notr="true">border: 1px solid blue;
 background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                 stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+        </property>
+        <property name="text">
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -425,14 +434,17 @@ border-radius: 3px;
         <property name="font">
          <font>
           <pointsize>12</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
          <string notr="true">border: 1px solid blue;
 background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                 stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+        </property>
+        <property name="text">
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -445,11 +457,47 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1021</width>
+     <width>926</width>
      <height>21</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="action3D_Window"/>
+    <addaction name="actionCoronal_Window"/>
+    <addaction name="actionSagittal_Window"/>
+    <addaction name="actionAxial_Window"/>
+   </widget>
+   <addaction name="menuMenu"/>
   </widget>
+  <action name="actionCoronal_Window">
+   <property name="text">
+    <string>Coronal Window</string>
+   </property>
+  </action>
+  <action name="action3D_Window">
+   <property name="text">
+    <string>3D Window</string>
+   </property>
+  </action>
+  <action name="actionSagittal_Window">
+   <property name="text">
+    <string>Sagittal Window</string>
+   </property>
+  </action>
+  <action name="actionAxial_Window">
+   <property name="text">
+    <string>Axial Window</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
