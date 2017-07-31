@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>926</width>
+    <width>932</width>
     <height>693</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -141,7 +141,7 @@ background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
     stop:0 #eee, stop:1 #ccc);
 border: 1px solid #777;
 width: 10px;
-margin: -5px;
+margin: -5px 0;
 border-radius: 3px;
 }
 
@@ -209,6 +209,7 @@ background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
     stop: 0 #bbf, stop: 1 #55f);
 height: 10px;
 border-radius: 4px;
+
 }
 
 QSlider::handle:horizontal {
@@ -216,7 +217,7 @@ background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
     stop:0 #eee, stop:1 #ccc);
 border: 1px solid #777;
 width: 10px;
-margin: -5px;
+margin: -5px 0;
 border-radius: 3px;
 }
 
@@ -405,7 +406,7 @@ background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
     stop:0 #eee, stop:1 #ccc);
 border: 1px solid #777;
 width: 10px;
-margin: -5px;
+margin: -5px 0;
 border-radius: 3px;
 }
 
@@ -453,19 +454,26 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>926</width>
-     <height>21</height>
-    </rect>
-   </property>
    <property name="sizePolicy">
-    <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>-1</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
    </property>
    <widget class="QMenu" name="menuMenu">
     <property name="title">
