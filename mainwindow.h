@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "dataloader.h"
+
 namespace Ui {
   class MainWindow;
 }
@@ -14,6 +16,8 @@ class MainWindow : public QMainWindow
 public:
   explicit MainWindow(QWidget *parent = 0);
   ~MainWindow();
+  
+  void SetupData(const char *fileName);
   
 private slots:
     void on_action3D_Window_triggered();
@@ -36,8 +40,12 @@ private slots:
 
     void on_lineEditAxial_textChanged(const QString &arg1);
 
+    void on_actionSelect_data_file_triggered();
+    
 private:
   Ui::MainWindow *ui;
+  
+  DataLoader *dataLoader;
 };
 
 #endif // MAINWINDOW_H

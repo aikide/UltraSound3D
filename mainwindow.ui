@@ -60,7 +60,7 @@
      </widget>
     </item>
     <item row="1" column="2">
-     <widget class="QWidget" name="widgetCoronal" native="true">
+     <widget class="SliceWidget" name="widgetCoronal" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -68,7 +68,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QWidget" name="widgetSagittal" native="true">
+     <widget class="SliceWidget" name="widgetSagittal" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -110,7 +110,7 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="5" column="2">
-     <widget class="QWidget" name="widgetAxial" native="true">
+     <widget class="SliceWidget" name="widgetAxial" native="true">
       <property name="styleSheet">
        <string notr="true">border: 2px solid black;
 border-radius: 10px;</string>
@@ -163,7 +163,7 @@ border-radius: 3px;
        <widget class="QLineEdit" name="lineEditAxial">
         <property name="maximumSize">
          <size>
-          <width>30</width>
+          <width>40</width>
           <height>16777215</height>
          </size>
         </property>
@@ -251,7 +251,7 @@ border-radius: 3px;
         </property>
         <property name="maximumSize">
          <size>
-          <width>30</width>
+          <width>40</width>
           <height>16777215</height>
          </size>
         </property>
@@ -428,7 +428,7 @@ border-radius: 3px;
        <widget class="QLineEdit" name="lineEditSagittal">
         <property name="maximumSize">
          <size>
-          <width>30</width>
+          <width>40</width>
           <height>16777215</height>
          </size>
         </property>
@@ -454,6 +454,14 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>932</width>
+     <height>21</height>
+    </rect>
+   </property>
    <property name="sizePolicy">
     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
      <horstretch>0</horstretch>
@@ -484,7 +492,14 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
     <addaction name="actionSagittal_Window"/>
     <addaction name="actionAxial_Window"/>
    </widget>
+   <widget class="QMenu" name="menuDebug">
+    <property name="title">
+     <string>Debug</string>
+    </property>
+    <addaction name="actionSelect_data_file"/>
+   </widget>
    <addaction name="menuMenu"/>
+   <addaction name="menuDebug"/>
   </widget>
   <action name="actionCoronal_Window">
    <property name="text">
@@ -506,8 +521,21 @@ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
     <string>Axial Window</string>
    </property>
   </action>
+  <action name="actionSelect_data_file">
+   <property name="text">
+    <string>Select data file</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SliceWidget</class>
+   <extends>QWidget</extends>
+   <header>slicewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

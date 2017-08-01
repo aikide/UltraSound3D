@@ -15,11 +15,18 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     window3d.cpp \
-    slicewindow.cpp
+    slicewindow.cpp \
+    dataloader.cpp \
+    voxelgrid.cpp \
+    slicewidget.cpp
 
 HEADERS  += mainwindow.h \
     window3d.h \
-    slicewindow.h
+    slicewindow.h \
+    Hifu_capture.h \
+    dataloader.h \
+    voxelgrid.h \
+    slicewidget.h
 
 FORMS    += mainwindow.ui \
     window3d.ui \
