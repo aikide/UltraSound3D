@@ -10,7 +10,9 @@ MainWindow::MainWindow(QWidget *parent) :
   QMainWindow(parent), ui(new Ui::MainWindow)
 {
   ui->setupUi(this);      
-  
+  ui->widgetAxial->SetParentMainWindow();
+  ui->widgetCoronal->SetParentMainWindow();
+  ui->widgetSagittal->SetParentMainWindow();
   dataLoader = new DataLoader();
 }
 

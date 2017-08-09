@@ -1,5 +1,7 @@
 #include "slicewindow.h"
 #include "ui_slicewindow.h"
+#include <QDebug>
+#include <QMouseEvent>
 
 SliceWindow::SliceWindow(QWidget *parent) :
     QDialog(parent),
@@ -33,4 +35,11 @@ void SliceWindow::on_lineEditSlice_textChanged(const QString &arg1)
     {
         ui->horizontalSliderSlice->setValue(ui->horizontalSliderSlice->minimum());
     }
+}
+
+void SliceWindow::ChangeCursorPosition(QPoint pos)
+{
+    //qDebug() << event->pos();
+    ui->lineEditX->setText(QString::number(pos.x()));
+    ui->lineEditY->setText(QString::number(pos.y()));
 }
