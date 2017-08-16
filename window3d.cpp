@@ -21,6 +21,7 @@ void Window3D::on_pushButtonAxis_clicked()
     ui->pushButtonAxisSave->setEnabled(true);
     ui->pushButtonAxisCancel->setEnabled(true);
     editFlag = true;
+    //ui->pushButtonAxisCancel->setVisible(false);
 }
 
 void Window3D::on_pushButtonAxisEdit_clicked()
@@ -50,3 +51,5 @@ void Window3D::on_pushButtonAxisCancel_clicked()
         ui->pushButtonAxisEdit->setEnabled(true);
     }
 }
+
+

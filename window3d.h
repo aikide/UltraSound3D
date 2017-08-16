@@ -24,6 +24,7 @@ private slots:
 
     void on_pushButtonAxisCancel_clicked();
 
+
 private:
     Ui::Window3D *ui;
     bool editFlag;
