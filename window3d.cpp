@@ -7,6 +7,15 @@ Window3D::Window3D(QWidget *parent) :
 {
     ui->setupUi(this);
     editFlag = false;
+
+    ui->frameA->setVisible(false);
+    ui->frameB->setVisible(false);
+    ui->frameC->setVisible(false);
+    ui->frameD->setVisible(false);
+    ui->frameE->setVisible(false);
+    ui->frameF->setVisible(false);
+
+    ui->groupBoxPoints->setVisible(false);
 }
 
 Window3D::~Window3D()
@@ -20,8 +29,13 @@ void Window3D::on_pushButtonAxis_clicked()
     ui->pushButtonAxisEdit->setEnabled(false);
     ui->pushButtonAxisSave->setEnabled(true);
     ui->pushButtonAxisCancel->setEnabled(true);
+    ui->pushButtonPair->setEnabled(true);
+    ui->pushButtonFixPair->setEnabled(true);
     editFlag = true;
-    //ui->pushButtonAxisCancel->setVisible(false);
+    ui->groupBoxPoints->setVisible(true);
+    ui->frameA->setVisible(true);
+    ui->frameB->setVisible(true);
+
 }
 
 void Window3D::on_pushButtonAxisEdit_clicked()
@@ -53,3 +67,9 @@ void Window3D::on_pushButtonAxisCancel_clicked()
 }
 
 
+
+void Window3D::on_pushButtonPair_clicked()
+{
+    ui->frameC->setVisible(true);
+    ui->frameD->setVisible(true);
+}
