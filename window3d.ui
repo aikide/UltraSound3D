@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>870</width>
-    <height>831</height>
+    <width>922</width>
+    <height>834</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -278,16 +278,6 @@ border-radius: 3px;
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayoutAxis">
-       <item row="1" column="0">
-        <widget class="QPushButton" name="pushButtonAxisSave">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="text">
-          <string>Сохранить</string>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="0">
         <widget class="QPushButton" name="pushButtonAxis">
          <property name="text">
@@ -302,16 +292,6 @@ border-radius: 3px;
          </property>
          <property name="text">
           <string>Редактировать</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="pushButtonAxisCancel">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="text">
-          <string>Отмена</string>
          </property>
         </widget>
        </item>
@@ -418,6 +398,47 @@ background: red;</string>
            </item>
            <item>
             <widget class="QToolButton" name="toolButtonDeleteA">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <strikeout>false</strikeout>
+              </font>
+             </property>
+             <property name="toolTipDuration">
+              <number>0</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QToolButton {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #860b0b, stop: 1 #ce1313);
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #ce1313, stop: 1 #f74747);
+ }
+</string>
+             </property>
              <property name="text">
               <string>x</string>
              </property>
@@ -502,6 +523,32 @@ background: red;</string>
            </item>
            <item>
             <widget class="QToolButton" name="toolButtonDeleteB">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTipDuration">
+              <number>0</number>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QToolButton {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #860b0b, stop: 1 #ce1313);
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #ce1313, stop: 1 #f74747);
+ }
+</string>
+             </property>
              <property name="text">
               <string>x</string>
              </property>
@@ -583,6 +630,26 @@ background: green;</string>
            </item>
            <item>
             <widget class="QToolButton" name="toolButtonDeleteC">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QToolButton {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #860b0b, stop: 1 #ce1313);
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #ce1313, stop: 1 #f74747);
+ }
+</string>
+             </property>
              <property name="text">
               <string>x</string>
              </property>
@@ -658,6 +725,26 @@ background: green;</string>
            </item>
            <item>
             <widget class="QToolButton" name="toolButtonDeleteD">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QToolButton {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #860b0b, stop: 1 #ce1313);
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #ce1313, stop: 1 #f74747);
+ }
+</string>
+             </property>
              <property name="text">
               <string>x</string>
              </property>
@@ -733,6 +820,26 @@ background: blue;</string>
            </item>
            <item>
             <widget class="QToolButton" name="toolButtonDeleteE">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QToolButton {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #860b0b, stop: 1 #ce1313);
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #ce1313, stop: 1 #f74747);
+ }
+</string>
+             </property>
              <property name="text">
               <string>x</string>
              </property>
@@ -808,6 +915,26 @@ background: blue;</string>
            </item>
            <item>
             <widget class="QToolButton" name="toolButtonDeleteF">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QToolButton {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #860b0b, stop: 1 #ce1313);
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #ce1313, stop: 1 #f74747);
+ }
+</string>
+             </property>
              <property name="text">
               <string>x</string>
              </property>
@@ -820,14 +947,64 @@ background: blue;</string>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButtonFixPair">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="text">
-        <string>Закрепить пару точек</string>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QPushButton" name="pushButtonFixPair">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Закрепить пару точек</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonUnFix">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Отмена фиксации</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QPushButton" name="pushButtonAxisSave">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Сохранить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonAxisCancel">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Отмена</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
       <spacer name="verticalSpacer_2">

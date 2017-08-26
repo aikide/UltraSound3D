@@ -27,9 +27,25 @@ private slots:
 
     void on_pushButtonPair_clicked();
 
+    void on_toolButtonDeleteA_clicked();
+
+    void on_toolButtonDeleteB_clicked();
+
+    void on_toolButtonDeleteC_clicked();
+
+    void on_toolButtonDeleteD_clicked();
+
+    void on_toolButtonDeleteE_clicked();
+
+    void on_toolButtonDeleteF_clicked();
+
 private:
     Ui::Window3D *ui;
     bool editFlag;
+
+    bool isABPairSet;
+    bool isCDPairSet;
+    bool isEFPairSet;
 };
 
 #endif // WINDOW3D_H

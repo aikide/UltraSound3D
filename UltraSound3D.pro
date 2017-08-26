@@ -18,7 +18,8 @@ SOURCES += main.cpp\
     slicewindow.cpp \
     dataloader.cpp \
     voxelgrid.cpp \
-    slicewidget.cpp
+    slicewidget.cpp \
+    dialogbox.cpp
 
 HEADERS  += mainwindow.h \
     window3d.h \
@@ -26,8 +27,10 @@ HEADERS  += mainwindow.h \
     Hifu_capture.h \
     dataloader.h \
     voxelgrid.h \
-    slicewidget.h
+    slicewidget.h \
+    dialogbox.h
 
 FORMS    += mainwindow.ui \
     window3d.ui \
-    slicewindow.ui
+    slicewindow.ui \
+    dialogbox.ui
